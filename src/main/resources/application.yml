@@ -1,0 +1,14 @@
+spring.application.name: recommendLunch_back
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/recommend?serverTimezone=Asia/Seoul
+    username: kyumin
+    password: 1234
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
