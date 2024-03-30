@@ -8,13 +8,14 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
+@Table(name = "menu")
 @Getter @Setter
-@Table(name = "restaurant")
-public class RestaurantEntity {
+public class MenuEntity {
 
     @Id @GeneratedValue
     private Long id;
 
-    private String restaurantName;
+    private String menuName;
+    private int price;
     private boolean orderable;
 }

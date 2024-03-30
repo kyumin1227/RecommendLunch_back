@@ -3,18 +3,18 @@ package com.example.recommendLunch_back.entity;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
-import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
 
 @Entity
 @Getter @Setter
-@Table(name = "restaurant")
-public class RestaurantEntity {
+public class MemberEntity {
 
     @Id @GeneratedValue
-    private Long id;
+    private long id;
 
-    private String restaurantName;
-    private boolean orderable;
+    private String phone;
+    private String name;
+    private String email;
+    private String password;
 }
