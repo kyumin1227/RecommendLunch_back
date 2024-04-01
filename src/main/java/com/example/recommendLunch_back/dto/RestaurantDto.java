@@ -11,6 +11,6 @@ public class RestaurantDto {
     private String explanation;
 
     public RestaurantEntity toEntity() {
-        return new RestaurantEntity(id, restaurantName, explanation, false);
+        return new RestaurantEntity(id, restaurantName, explanation, false, null);
     }
 }

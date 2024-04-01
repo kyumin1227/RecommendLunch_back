@@ -19,4 +19,6 @@ public class RestaurantEntity {
     private String restaurantName;
     private String explanation;
     private boolean orderable;
+
+    private String naverId;
 }
